@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123a28">
+  <meta name="description" content="js7y is Joel Salisbury's independent software and technology collaboratory, with an interest in conservation, outdoor recreation, and mission-driven work.">
+  <title>js7y — Joel Salisbury</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Ubuntu+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#08271c;--forest:#164b2e;--green:#418d38;--cream:#fbfaf6;--card:#edf1e8;--muted:#3a5145}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:#15211b;font:400 19px/1.45 'Ubuntu Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit}a:focus-visible{outline:3px solid var(--green);outline-offset:4px}.container{width:min(100% - 48px,1030px);margin-inline:auto}header{padding:28px 0 54px}.wordmark{font:600 clamp(36px,5vw,52px)/1 'IBM Plex Mono',monospace;color:var(--ink);letter-spacing:-.065em;text-decoration:none}h1,h2,h3,p{margin-top:0}h1,h2,h3{color:var(--ink);line-height:1.1;letter-spacing:-.035em}h1{font-size:clamp(34px,4.4vw,53px);margin-bottom:20px;font-weight:800}h2{font-size:clamp(31px,3.5vw,42px);margin-bottom:26px;font-weight:800}h3{font-size:clamp(27px,3vw,37px);margin-bottom:12px;font-weight:800}p{margin-bottom:15px}.intro{border-left:6px solid var(--green);padding-left:30px;max-width:1020px}.intro p{max-width:930px}.intro p:last-child{margin-bottom:0}section{margin-top:70px}.project-card{display:grid;grid-template-columns:150px minmax(0,1fr);gap:30px;background:var(--card);border-radius:19px;padding:28px 34px;align-items:start}.project-symbol{display:flex;align-items:flex-start;justify-content:center;border-right:1px solid #b5c8b2;padding:12px 26px 10px 0;height:100%;color:#27702d}.project-symbol svg{width:66px;height:66px}.project-body p{max-width:750px}.project-body .context{font-style:italic}.button{display:inline-flex;gap:14px;align-items:center;padding:11px 20px;background:var(--forest);border:1px solid var(--forest);border-radius:10px;color:white;text-decoration:none;font-weight:700;font-size:17px;margin-top:2px;transition:background .15s}.button:hover{background:#0c3520}.button svg{width:18px;height:18px}.contact{margin-top:50px}.contact h2{margin-bottom:10px}.email{display:inline-flex;align-items:center;gap:12px;padding:9px 18px;border:2px solid var(--forest);border-radius:9px;color:var(--forest);font-weight:700;text-decoration:none;font-size:18px}.email:hover{background:#edf3e9}.email svg{width:22px;height:22px}.landscape{margin-top:42px;position:relative;height:210px;overflow:hidden}.landscape svg{position:absolute;inset:0;width:100%;height:100%;display:block}.footer-copy{position:absolute;bottom:18px;left:max(24px,calc((100vw - 1030px)/2));font:400 13px 'IBM Plex Mono',monospace;color:#f1f4e9;z-index:2}@media(max-width:700px){body{font-size:17px}.container{width:min(100% - 36px,1030px)}header{padding:25px 0 48px}.intro{padding-left:18px;border-left-width:4px}section{margin-top:55px}.project-card{grid-template-columns:1fr;gap:8px;padding:23px}.project-symbol{border:0;justify-content:flex-start;padding:0;height:auto}.project-symbol svg{width:48px;height:48px}.landscape{height:150px}.footer-copy{font-size:11px;bottom:12px}.email{font-size:16px}}
+  </style>
+</head>
+<body>
+  <header class="container"><a class="wordmark" href="/" aria-label="js7y home">js7y</a></header>
+  <main class="container">
+    <div class="intro">
+      <h1>My name is Joel Salisbury.</h1>
+      <p>I've spent most of my career helping people and organizations figure out what they can do with technology, then working with them to make it happen.</p>
+      <p>js7y is my independent software and technology collaboratory. I like teaming up with people doing interesting things, especially in conservation, outdoor recreation, and other mission-driven work, to solve problems and make cool stuff together.</p>
+      <p>Sometimes that means building something new. Other times it's making better use of what's already there.</p>
+    </div>
+    <section aria-labelledby="projects-title">
+      <h2 id="projects-title">Projects</h2>
+      <article class="project-card">
+        <div class="project-symbol" aria-hidden="true">
+          <svg viewBox="0 0 80 80" fill="currentColor"><circle cx="40" cy="21" r="12"/><circle cx="16" cy="30" r="9"/><circle cx="64" cy="30" r="9"/><path d="M22 62c0-14 8-24 18-24s18 10 18 24v5H22zM2 59c0-12 6-20 15-20 4 0 8 2 10 5-4 5-7 12-7 21H2zm76 6H60c0-9-2-16-7-21 3-3 7-5 11-5 8 0 14 8 14 20z"/></svg>
+        </div>
+        <div class="project-body">
+          <h3>Voluntrack</h3>
+          <p class="context">A volunteer management application built in consultation with the Quiet Corner chapter of the New England Mountain Bike Association (NEMBA).</p>
+          <p>Voluntrack helps organizations coordinate volunteer opportunities, track hours, and keep tabs on the work their volunteers are doing.</p>
+          <a class="button" href="https://voluntrack.js7y.io" target="_blank" rel="noopener noreferrer">voluntrack.js7y.io <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 5h6v6M19 5l-9 9"/><path d="M19 13v6H5V5h6"/></svg></a>
+        </div>
+      </article>
+    </section>
+    <section class="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Get in touch</h2>
+      <p>Have something you're working on? I'd love to hear about it.</p>
+      <a class="email" href="mailto:joel@joelsalisbury.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m3 6 9 7 9-7"/></svg>joel@joelsalisbury.com</a>
+    </section>
+  </main>
+  <footer class="landscape" aria-label="Copyright Joel Salisbury">
+    <svg viewBox="0 0 1440 220" preserveAspectRatio="none" role="img" aria-label="Illustrated rolling hills and evergreen trees">
+      <path d="M0 77 120 85 240 63 350 92 480 74 600 104 710 86 825 114 960 72 1060 94 1235 32 1340 59 1440 62V220H0Z" fill="#afcbb9"/>
+      <path d="M0 125 150 106 310 124 430 116 590 153 760 126 880 141 1020 103 1140 116 1300 86 1440 116V220H0Z" fill="#7ca994"/>
+      <path d="M0 142 160 151 330 158 480 163 630 177 760 167 900 173 1050 160 1190 157 1310 144 1440 151V220H0Z" fill="#416f58"/>
+      <defs><g id="tree" fill="#123f2a"><path d="M0-35 14-11H7L20 10H9L25 29H-25L-9 10H-20L-7-11H-14Z"/><rect x="-3" y="20" width="6" height="17"/></g></defs>
+      <g fill="#123f2a"><path d="M0 176 Q110 151 220 177 T440 184 T690 197 T930 187 T1190 181 T1440 177 V220 H0Z"/></g>
+      <g opacity=".98"><use href="#tree" transform="translate(25 160) scale(1.4)"/><use href="#tree" transform="translate(61 158) scale(1.9)"/><use href="#tree" transform="translate(100 171) scale(1.2)"/><use href="#tree" transform="translate(137 174) scale(1.5)"/><use href="#tree" transform="translate(176 177) scale(1.1)"/><use href="#tree" transform="translate(213 184) scale(.9)"/><use href="#tree" transform="translate(255 187) scale(1.2)"/><use href="#tree" transform="translate(300 190) scale(.8)"/><use href="#tree" transform="translate(348 194) scale(1.0)"/><use href="#tree" transform="translate(394 197) scale(.7)"/><use href="#tree" transform="translate(439 196) scale(1.1)"/><use href="#tree" transform="translate(485 198) scale(.8)"/><use href="#tree" transform="translate(533 200) scale(.65)"/><use href="#tree" transform="translate(580 202) scale(.8)"/><use href="#tree" transform="translate(629 204) scale(.6)"/><use href="#tree" transform="translate(679 205) scale(.8)"/><use href="#tree" transform="translate(725 203) scale(.65)"/><use href="#tree" transform="translate(774 201) scale(.8)"/><use href="#tree" transform="translate(822 201) scale(.65)"/><use href="#tree" transform="translate(868 198) scale(.9)"/><use href="#tree" transform="translate(919 196) scale(.7)"/><use href="#tree" transform="translate(969 193) scale(1.0)"/><use href="#tree" transform="translate(1019 191) scale(.8)"/><use href="#tree" transform="translate(1069 186) scale(1.1)"/><use href="#tree" transform="translate(1115 184) scale(.85)"/><use href="#tree" transform="translate(1162 180) scale(1.1)"/><use href="#tree" transform="translate(1210 173) scale(1.3)"/><use href="#tree" transform="translate(1250 162) scale(1.7)"/><use href="#tree" transform="translate(1295 166) scale(1.2)"/><use href="#tree" transform="translate(1334 151) scale(1.8)"/><use href="#tree" transform="translate(1382 169) scale(1.3)"/><use href="#tree" transform="translate(1420 172) scale(1.5)"/></g>
+    </svg>
+    <div class="footer-copy">© 2026 Joel Salisbury · js7y</div>
+  </footer>
+</body>
+</html>
