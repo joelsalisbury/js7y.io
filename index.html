@@ -3,56 +3,159 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#123a28">
-  <meta name="description" content="js7y is Joel Salisbury's independent software and technology collaboratory, with an interest in conservation, outdoor recreation, and mission-driven work.">
+  <meta name="theme-color" content="#FAFAF7">
+  <meta name="description" content="The personal homepage of Joel Salisbury: projects, experiments, and other things I'm interested in.">
+  <meta name="author" content="Joel Salisbury">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="js7y — Joel Salisbury">
+  <meta property="og:description" content="The personal homepage of Joel Salisbury: projects, experiments, and other things I'm interested in.">
+  <meta property="og:url" content="https://js7y.io/">
   <title>js7y — Joel Salisbury</title>
+  <link rel="canonical" href="https://js7y.io/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Ubuntu+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
-    :root{--ink:#08271c;--forest:#164b2e;--green:#418d38;--cream:#fbfaf6;--card:#edf1e8;--muted:#3a5145}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:#15211b;font:400 19px/1.45 'Ubuntu Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit}a:focus-visible{outline:3px solid var(--green);outline-offset:4px}.container{width:min(100% - 48px,1030px);margin-inline:auto}header{padding:28px 0 54px}.wordmark{font:600 clamp(36px,5vw,52px)/1 'IBM Plex Mono',monospace;color:var(--ink);letter-spacing:-.065em;text-decoration:none}h1,h2,h3,p{margin-top:0}h1,h2,h3{color:var(--ink);line-height:1.1;letter-spacing:-.035em}h1{font-size:clamp(34px,4.4vw,53px);margin-bottom:20px;font-weight:800}h2{font-size:clamp(31px,3.5vw,42px);margin-bottom:26px;font-weight:800}h3{font-size:clamp(27px,3vw,37px);margin-bottom:12px;font-weight:800}p{margin-bottom:15px}.intro{border-left:6px solid var(--green);padding-left:30px;max-width:1020px}.intro p{max-width:930px}.intro p:last-child{margin-bottom:0}section{margin-top:70px}.project-card{display:grid;grid-template-columns:150px minmax(0,1fr);gap:30px;background:var(--card);border-radius:19px;padding:28px 34px;align-items:start}.project-symbol{display:flex;align-items:flex-start;justify-content:center;border-right:1px solid #b5c8b2;padding:12px 26px 10px 0;height:100%;color:#27702d}.project-symbol svg{width:66px;height:66px}.project-body p{max-width:750px}.project-body .context{font-style:italic}.button{display:inline-flex;gap:14px;align-items:center;padding:11px 20px;background:var(--forest);border:1px solid var(--forest);border-radius:10px;color:white;text-decoration:none;font-weight:700;font-size:17px;margin-top:2px;transition:background .15s}.button:hover{background:#0c3520}.button svg{width:18px;height:18px}.contact{margin-top:50px}.contact h2{margin-bottom:10px}.email{display:inline-flex;align-items:center;gap:12px;padding:9px 18px;border:2px solid var(--forest);border-radius:9px;color:var(--forest);font-weight:700;text-decoration:none;font-size:18px}.email:hover{background:#edf3e9}.email svg{width:22px;height:22px}.landscape{margin-top:42px;position:relative;height:210px;overflow:hidden}.landscape svg{position:absolute;inset:0;width:100%;height:100%;display:block}.footer-copy{position:absolute;bottom:18px;left:max(24px,calc((100vw - 1030px)/2));font:400 13px 'IBM Plex Mono',monospace;color:#f1f4e9;z-index:2}@media(max-width:700px){body{font-size:17px}.container{width:min(100% - 36px,1030px)}header{padding:25px 0 48px}.intro{padding-left:18px;border-left-width:4px}section{margin-top:55px}.project-card{grid-template-columns:1fr;gap:8px;padding:23px}.project-symbol{border:0;justify-content:flex-start;padding:0;height:auto}.project-symbol svg{width:48px;height:48px}.landscape{height:150px}.footer-copy{font-size:11px;bottom:12px}.email{font-size:16px}}
+    :root{--bg:#FAFAF7;--text:#252B2B;--muted:#647071;--accent:#3D6475;--border:#DDE2DF;--mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,monospace;--sans:'IBM Plex Sans',system-ui,-apple-system,'Segoe UI',sans-serif}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+    body{margin:0;background:var(--bg);color:var(--text);font:400 18px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+    .container{width:min(100% - 48px,760px);margin-inline:auto}
+    a{color:var(--accent);text-underline-offset:3px;text-decoration-thickness:1px}
+    a:hover{text-decoration-thickness:2px}
+    a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+    a:not([href]){color:var(--muted);text-decoration:none}
+    .skip{position:absolute;left:-9999px;top:0;background:var(--text);color:var(--bg);padding:8px 12px;font:500 14px var(--mono)}
+    .skip:focus{left:16px;top:16px}
+    h1,h2,h3,p{margin-top:0}
+    h1,h2,h3{font-weight:600;line-height:1.2;letter-spacing:-.01em}
+    h1{font-size:clamp(34px,6vw,46px);margin-bottom:24px}
+    h2{font-size:clamp(24px,4vw,30px);margin-bottom:28px}
+    h3{font-size:20px;margin-bottom:6px}
+    p{margin-bottom:16px}
+    .label{display:block;font:500 13px/1 var(--mono);color:var(--muted);text-transform:lowercase;letter-spacing:.02em;margin-bottom:14px}
+    .label::before{content:"// "}
+    .site-header{border-bottom:1px solid var(--border)}
+    .site-header .container{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;justify-content:space-between;padding:22px 0}
+    .wordmark{font:500 24px/1 var(--mono);color:var(--text);text-decoration:none;letter-spacing:-.02em}
+    .wordmark:hover{color:var(--accent)}
+    nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0}
+    nav a{font:400 15px var(--mono);color:var(--muted);text-decoration:none}
+    nav a:hover{color:var(--accent);text-decoration:underline}
+    .hero{padding:88px 0 72px}
+    .hero p{font-size:20px;max-width:620px}
+    .hero p:last-child{color:var(--muted);margin-bottom:0}
+    section.block{padding:64px 0;border-top:1px solid var(--border)}
+    .list{list-style:none;margin:0;padding:0;display:grid;gap:0}
+    .list>li{padding:22px 0;border-top:1px solid var(--border)}
+    .list>li:first-child{border-top:0;padding-top:0}
+    .list>li:last-child{padding-bottom:0}
+    .list p{color:var(--muted);margin-bottom:10px;max-width:620px}
+    .more{font:400 15px var(--mono)}
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+    .project{border:1px solid var(--border);border-radius:6px;padding:22px 22px 18px;display:flex;flex-direction:column}
+    .project p{color:var(--muted);flex:1}
+    .project .meta{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;font:400 14px var(--mono)}
+    .status{color:var(--muted)}
+    .status::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--accent);margin-right:8px;vertical-align:1px}
+    .status.dev::before{background:transparent;border:1px solid var(--muted)}
+    .prose p{max-width:620px}
+    .email{font:400 17px var(--mono)}
+    .site-footer{border-top:1px solid var(--border);margin-top:32px}
+    .site-footer .container{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;padding:28px 0 40px;font:400 13px var(--mono);color:var(--muted)}
+    .site-footer p{margin:0}
+    @media (max-width:600px){body{font-size:17px}.container{width:min(100% - 36px,760px)}.hero{padding:56px 0 48px}.hero p{font-size:18px}section.block{padding:48px 0}nav ul{gap:18px}}
   </style>
 </head>
 <body>
-  <header class="container"><a class="wordmark" href="/" aria-label="js7y home">js7y</a></header>
-  <main class="container">
-    <div class="intro">
-      <h1>My name is Joel Salisbury.</h1>
-      <p>I've spent most of my career helping people and organizations figure out what they can do with technology, then working with them to make it happen.</p>
-      <p>js7y is my independent software and technology collaboratory. I like teaming up with people doing interesting things, especially in conservation, outdoor recreation, and other mission-driven work, to solve problems and make cool stuff together.</p>
-      <p>Sometimes that means building something new. Other times it's making better use of what's already there.</p>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container">
+      <a class="wordmark" href="/" aria-label="js7y home">js7y</a>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#elsewhere">Elsewhere</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <section aria-labelledby="projects-title">
-      <h2 id="projects-title">Projects</h2>
-      <article class="project-card">
-        <div class="project-symbol" aria-hidden="true">
-          <svg viewBox="0 0 80 80" fill="currentColor"><circle cx="40" cy="21" r="12"/><circle cx="16" cy="30" r="9"/><circle cx="64" cy="30" r="9"/><path d="M22 62c0-14 8-24 18-24s18 10 18 24v5H22zM2 59c0-12 6-20 15-20 4 0 8 2 10 5-4 5-7 12-7 21H2zm76 6H60c0-9-2-16-7-21 3-3 7-5 11-5 8 0 14 8 14 20z"/></svg>
-        </div>
-        <div class="project-body">
-          <h3>Voluntrack</h3>
-          <p class="context">A volunteer management application built in consultation with the Quiet Corner chapter of the New England Mountain Bike Association (NEMBA).</p>
-          <p>Voluntrack helps organizations coordinate volunteer opportunities, track hours, and keep tabs on the work their volunteers are doing.</p>
-          <a class="button" href="https://voluntrack.js7y.io" target="_blank" rel="noopener noreferrer">voluntrack.js7y.io <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 5h6v6M19 5l-9 9"/><path d="M19 13v6H5V5h6"/></svg></a>
-        </div>
-      </article>
+  </header>
+
+  <main id="main" class="container">
+    <section class="hero" aria-labelledby="hero-title">
+      <h1 id="hero-title">Hey, I'm Joel.</h1>
+      <p>I'm Joel Salisbury. I build software, lead a team of people who build software, and spend as much time outdoors as I can.</p>
+      <p>This is my little corner of the internet for projects, experiments, and other things I'm interested in.</p>
     </section>
-    <section class="contact" aria-labelledby="contact-title">
-      <h2 id="contact-title">Get in touch</h2>
-      <p>Have something you're working on? I'd love to hear about it.</p>
-      <a class="email" href="mailto:joel@joelsalisbury.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m3 6 9 7 9-7"/></svg>joel@joelsalisbury.com</a>
+
+    <section id="work" class="block" aria-labelledby="work-title">
+      <span class="label">What I'm up to</span>
+      <h2 id="work-title">A few things I'm involved in.</h2>
+      <ul class="list">
+        <li>
+          <h3>i3</h3>
+          <p>I lead Institutional Insights &amp; Innovation (i3) at the University of Connecticut, where we build software and help people solve problems across the university.</p>
+          <!-- i3 URL not yet verified: add href="..." to enable this link. -->
+          <a class="more">Visit i3</a>
+        </li>
+        <li>
+          <h3>Something Useful</h3>
+          <p>My independent software and technology practice, focused on practical tools and helping organizations make better use of technology.</p>
+          <a class="more" href="https://somethinguseful.io">Visit Something Useful</a>
+        </li>
+        <li>
+          <h3>Personal projects</h3>
+          <p>I like building small applications, trying out ideas, and making tools that solve problems I've run into.</p>
+          <a class="more" href="#projects">See projects</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="projects" class="block" aria-labelledby="projects-title">
+      <span class="label">Projects</span>
+      <h2 id="projects-title">Things I've made.</h2>
+      <div class="projects">
+        <article class="project">
+          <h3>Voluntrack</h3>
+          <p>A simple application for recording volunteer hours and coordinating participation.</p>
+          <div class="meta">
+            <span class="status">In use</span>
+            <a href="https://voluntrack.js7y.io">voluntrack.js7y.io</a>
+          </div>
+        </article>
+        <article class="project">
+          <h3>GearHub</h3>
+          <p>A lightweight application for managing shared equipment and reservations.</p>
+          <div class="meta">
+            <span class="status dev">In development</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="elsewhere" class="block prose" aria-labelledby="elsewhere-title">
+      <span class="label">Elsewhere</span>
+      <h2 id="elsewhere-title">Away from the keyboard.</h2>
+      <p>I spend a lot of my free time outdoors. Hunting, working on the land, exploring the woods, and generally finding reasons not to be sitting at a computer.</p>
+      <p>I'm also a rugby fan, occasional tinkerer, and serial starter of little projects.</p>
+    </section>
+
+    <section id="contact" class="block prose" aria-labelledby="contact-title">
+      <span class="label">Contact</span>
+      <h2 id="contact-title">Say hello.</h2>
+      <p>If you want to talk software, swap ideas, or just get in touch, feel free to send me a note.</p>
+      <p><a class="email" href="mailto:joel@joelsalisbury.com">joel@joelsalisbury.com</a></p>
+      <p>For software consulting and project inquiries, visit <a href="https://somethinguseful.io">Something Useful</a>.</p>
     </section>
   </main>
-  <footer class="landscape" aria-label="Copyright Joel Salisbury">
-    <svg viewBox="0 0 1440 220" preserveAspectRatio="none" role="img" aria-label="Illustrated rolling hills and evergreen trees">
-      <path d="M0 77 120 85 240 63 350 92 480 74 600 104 710 86 825 114 960 72 1060 94 1235 32 1340 59 1440 62V220H0Z" fill="#afcbb9"/>
-      <path d="M0 125 150 106 310 124 430 116 590 153 760 126 880 141 1020 103 1140 116 1300 86 1440 116V220H0Z" fill="#7ca994"/>
-      <path d="M0 142 160 151 330 158 480 163 630 177 760 167 900 173 1050 160 1190 157 1310 144 1440 151V220H0Z" fill="#416f58"/>
-      <defs><g id="tree" fill="#123f2a"><path d="M0-35 14-11H7L20 10H9L25 29H-25L-9 10H-20L-7-11H-14Z"/><rect x="-3" y="20" width="6" height="17"/></g></defs>
-      <g fill="#123f2a"><path d="M0 176 Q110 151 220 177 T440 184 T690 197 T930 187 T1190 181 T1440 177 V220 H0Z"/></g>
-      <g opacity=".98"><use href="#tree" transform="translate(25 160) scale(1.4)"/><use href="#tree" transform="translate(61 158) scale(1.9)"/><use href="#tree" transform="translate(100 171) scale(1.2)"/><use href="#tree" transform="translate(137 174) scale(1.5)"/><use href="#tree" transform="translate(176 177) scale(1.1)"/><use href="#tree" transform="translate(213 184) scale(.9)"/><use href="#tree" transform="translate(255 187) scale(1.2)"/><use href="#tree" transform="translate(300 190) scale(.8)"/><use href="#tree" transform="translate(348 194) scale(1.0)"/><use href="#tree" transform="translate(394 197) scale(.7)"/><use href="#tree" transform="translate(439 196) scale(1.1)"/><use href="#tree" transform="translate(485 198) scale(.8)"/><use href="#tree" transform="translate(533 200) scale(.65)"/><use href="#tree" transform="translate(580 202) scale(.8)"/><use href="#tree" transform="translate(629 204) scale(.6)"/><use href="#tree" transform="translate(679 205) scale(.8)"/><use href="#tree" transform="translate(725 203) scale(.65)"/><use href="#tree" transform="translate(774 201) scale(.8)"/><use href="#tree" transform="translate(822 201) scale(.65)"/><use href="#tree" transform="translate(868 198) scale(.9)"/><use href="#tree" transform="translate(919 196) scale(.7)"/><use href="#tree" transform="translate(969 193) scale(1.0)"/><use href="#tree" transform="translate(1019 191) scale(.8)"/><use href="#tree" transform="translate(1069 186) scale(1.1)"/><use href="#tree" transform="translate(1115 184) scale(.85)"/><use href="#tree" transform="translate(1162 180) scale(1.1)"/><use href="#tree" transform="translate(1210 173) scale(1.3)"/><use href="#tree" transform="translate(1250 162) scale(1.7)"/><use href="#tree" transform="translate(1295 166) scale(1.2)"/><use href="#tree" transform="translate(1334 151) scale(1.8)"/><use href="#tree" transform="translate(1382 169) scale(1.3)"/><use href="#tree" transform="translate(1420 172) scale(1.5)"/></g>
-    </svg>
-    <div class="footer-copy">© 2026 Joel Salisbury · js7y</div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Joel Salisbury</p>
+      <p><a href="https://somethinguseful.io">somethinguseful.io</a></p>
+    </div>
   </footer>
 </body>
 </html>
